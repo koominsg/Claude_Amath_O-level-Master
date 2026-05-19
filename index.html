@@ -557,6 +557,7 @@ hard:[
 {q:"Find the maximum height of a projectile launched at \\(60°\\) with speed \\(u\\).",type:'mc',opts:["\\(\\frac{3u^2}{8g}\\)","\\(\\frac{u^2}{2g}\\)","\\(\\frac{u^2}{g}\\)","\\(\\frac{u^2\\sin^2 60°}{2g}\\)"],answer:3,steps:["Vertical component: \\(u_y=u\\sin60°=\\frac{u\\sqrt3}{2}\\)","Max height \\(=\\frac{u_y^2}{2g}=\\frac{u^2\\sin^260°}{2g}=\\frac{3u^2}{8g}\\). Both A and D are the same."]},
 {q:"A particle's velocity is \\(v=3+2t-t^2\\) m/s. Find the maximum displacement from \\(t=0\\).",type:'mc',opts:["\\(\\frac{32}{3}\\)","8","\\(\\frac{22}{3}\\)","10"],answer:0,steps:["Max displacement when \\(v=0\\): \\(t^2-2t-3=0\\Rightarrow(t-3)(t+1)=0\\Rightarrow t=3\\) (\\(t>0\\))","\\(s=\\int_0^3(3+2t-t^2)\\,dt=[3t+t^2-\\frac{t^3}{3}]_0^3=9+9-9=9\\)... recheck: \\(=9+9-9=9\\neq\\frac{32}{3}\\). Let \\(v=4+2t-t^2\\): roots at \\(t=\\frac{2\\pm\\sqrt{4+16}}{2}\\)..."]},
 ],
+},
 };
 // ─── polynomial data appended here ───
 BANK.polynomials={
@@ -596,7 +597,7 @@ hard:[
 {q:"Find all values of \\(a\\) for which \\(f(x)=x^3+ax^2-x-a\\) has \\((x^2-1)\\) as a factor.",type:'mc',opts:["All real \\(a\\)","\\(a=0\\) only","\\(a=1\\) only","\\(a=\\pm1\\)"],answer:0,steps:["\\(x^2-1=(x-1)(x+1)\\). Check \\(f(1)=1+a-1-a=0\\checkmark\\) for all \\(a\\)","Check \\(f(-1)=-1+a+1-a=0\\checkmark\\) for all \\(a\\). So \\((x^2-1)\\) is always a factor."]},
 {q:"If \\(2x^3+3x^2+px+q\\equiv (2x+1)(x^2+x+q)\\) for all \\(x\\), find \\(p\\).",type:'mc',opts:["\\(\\tfrac{3}{2}+q\\)","\\(1+2q\\)","\\(3\\)","\\(2q+1\\)"],answer:1,steps:["Expand RHS: \\(2x^3+2x^2+2qx+x^2+x+q=2x^3+3x^2+(2q+1)x+q\\)","Comparing with LHS: \\(p=2q+1\\)"]},
 ],
-},
+};
 
 // ── STATE ──────────────────────────────────────────────────────────────────
 let S={topic:'polynomials',diff:'easy',qs:[],idx:0,correct:0,wrong:0,streak:0,answered:false,timer:null,timeLeft:60,tc:0,tw:0};
